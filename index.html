@@ -90,9 +90,14 @@ p a{
 
 /* Footer */
 .footer {
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   background: #ffffff;
+}
+
+.footer a{
+  color: #ff0000;
+  text-decoration: none;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -142,9 +147,6 @@ p a{
 <div class="row">
   <div class="side">
     <p>Want Anonymous Emotional Support? Go to <a href="https://www.7cups.com/12033798">7 Cups</a></p>
-    <!-- music player -->
-    <!-- <iframe src="https://www.opendrive.com/player/MjRfMjc2NjU2MjZfb3hjcUI" height="25" width="297" style="border:0" scrolling="no" frameborder="0" allowtransparency="true"></iframe> -->
-    <!-- music player -->
   </div>
   <div class="main">
     <img src="https://od.lk/s/MjRfMjc2Njc3Mzlf/headshot.jpg" alt="Ying-Yang" style="height: 300px; padding: 20px" align="left">
@@ -158,6 +160,16 @@ p a{
 </div>
 
 <div class="footer">
+    <div class="row">
+      <div class="column" style="width: 50%; text-align: right;">
+        <audio controls>
+          <source src="https://od.lk/s/MjRfMjc2NjU2MjZf/duttonsayshi-majestic.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <div class="column" style="width: 50%; text-align: left; padding-top: 20px;">
+        <a style="padding: 20px;" href="https://www.newgrounds.com/audio/listen/562958">Majestic by DuttonSaysHi</a>
+      </div>
+    </div>
 </div>
 
 </body>
