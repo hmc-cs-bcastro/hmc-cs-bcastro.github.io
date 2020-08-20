@@ -163,35 +163,46 @@ a:hover{
 </div>
 
 <div class="header">
+  <div class="row">
+    <div class="column" style="width: 20%;">
+    </div>
+    <div class="column" style="width: 60%;">
+      <h1>
+        Brenda V. Castro 
+        <img id="yinyang" onclick="makeSpin()" src="https://od.lk/s/MjRfMjc2Njc1OThf/Ying-Yang.png" alt="Ying-Yang" style="height: 40px;">
+      </h1>
 
-  <h1>
-    Brenda V. Castro 
-    <img id="yinyang" onclick="makeSpin()" src="https://od.lk/s/MjRfMjc2Njc1OThf/Ying-Yang.png" alt="Ying-Yang" style="height: 40px;">
-  </h1>
+      <script>
+        function makeSpin() {
+          document.getElementById("yinyang").className = "spin";
+        }
+      </script>
+      <!-- typewriter -->
+      <p id="message"></p>
 
-  <script>
-    function makeSpin() {
-      document.getElementById("yinyang").className = "spin";
-    }
-  </script>
-	<!-- typewriter -->
-	<p id="message"></p>
+      <script>
+      var i = 0;
+      var txt = 'Hi! I am a driven philomath here to help improve our well-being.';
+      var speed = 50;
 
-	<script>
-	var i = 0;
-	var txt = 'Hi! I am a driven philomath here to help improve our well-being.';
-	var speed = 50;
-
-	function typeWriter() {
-	  if (i < txt.length) {
-	    document.getElementById("message").innerHTML += txt.charAt(i);
-	    i++;
-	    setTimeout(typeWriter, speed);
-	  }
-	}
-	typeWriter()
-	</script>
-	<!-- typewriter -->
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("message").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+      typeWriter()
+      </script>
+      <!-- typewriter -->
+    </div>
+    <div class="column" 
+    style="width: 20%; 
+    text-align: center;
+    margin: auto;">
+      <p style="color: white;">Click on the yin yang =D</p>
+    </div>
+  </div>
 </div>
 
 <div class="row">
